@@ -6,6 +6,6 @@ module.exports = function(ircbot, config) {
 	}
 	
 	ircbot.addListener('registered', function() {
-		ircbot.say('USERSERV', 'LOGIN ' + config.irc.account.username + ' ' + config.irc.account.password);
+		ircbot.say('NS', 'ID ' + config.irc.account.password);
 	});
 };
